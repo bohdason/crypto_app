@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&family=Mukta:wght@300;400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mukta', sans-serif;
+
+    color: aliceblue;
+    font-size: 24px;
+
+    height: 100%;
+    margin: 0;
+
+    background-color: #1f2324d0;
+    scroll-behavior: smooth;
+
+}
+
+.container {
+
+    margin: 0 auto;
+}
+
+.btn_container {
+    text-align: center;
+    margin-top: 75px;
+}
+
+.action_btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 36px;
+    border-radius: 37px;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-right: 10px;
+    color: #fff;
+    background: #FF7B47;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+
+.coin {
+    display: flex;
+    height: 80px;
+    max-width: 480px;
+    border-radius: 80px;
+    margin: 0 auto;
+    margin-top: 40px;
+
+
+}
+
+.coin .coin-logo {
+    width: 80px;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.coin .coin-logo img {
+    width: 70%;
+    height: 70%;
+}
+
+.coin .coin-name {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.coin .coin-name h3 {
+    color: #fff;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.coin .coin-name span {
+    color: #aaa;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.coin .coin-price {
+    display: grid;
+    align-items: center;
+    margin-left: auto;
+    padding: 8px 22px 0 0;
+    text-align: right;
+}
+
+
+
+.coin .coin-price .price {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: -6px;
+}
+
+.coin .coin-price .change {
+    color: #aaa;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: -30px;
+}
+
+.coin.rising {
+    background: linear-gradient(90deg, #202022, #4eb64510);
+}
+
+.coin.rising .coin-price .price {
+    color: #30ff20;
+}
+
+.coin.falling {
+    background: linear-gradient(90deg, #202022, #aa444425);
+}
+
+.coin.falling .coin-price .price {
+    color: #ff4040;
+}
+
+.common_part {
+    display: flex;
+}
